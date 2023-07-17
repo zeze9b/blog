@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = "https://main--spiffy-lolly-d0958e.netlify.app/"
 title = "Puppet"
 
 theme = "puppet"
