@@ -2,7 +2,7 @@
 title = "test"
 date = "2023-07-17"
 description = ""
-draft = False
+draft = false
 subtitle = ""
 header_img = ""
 toc = true
