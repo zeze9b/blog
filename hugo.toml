@@ -82,9 +82,9 @@ custom_css = [] # ["css/custom.css"]  Add your file to assets folder  [assets/cs
 
 [params.sidebar]
 enable = true
-gravatarEmail = ""
+gravatarEmail = "zezekara0831@gmail.com"
 # Overwritten by your gravatar image if `gravatarEmail` is filled
-avatar = "img/IMG_2234.jpg"
+#avatar = "img/IMG_2234.jpg"
 bio = "穏やかに生きたい。"
 
 [params.social]
