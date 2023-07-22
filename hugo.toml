@@ -1,13 +1,13 @@
 baseURL = "https://main--spiffy-lolly-d0958e.netlify.app/"
-title = "Puppet"
+title = "ギークになりたくて"
 
 theme = "puppet"
 themesDir = "themes"
 
 copyright = ""
-paginate = 3
-languageCode = "en"
-defaultContentLanguage = "en"
+paginate = 10
+languageCode = "ja"
+defaultContentLanguage = "ja"
 
 hasCJKLanguage = true
 enableInlineShortcodes = true
@@ -35,7 +35,7 @@ codeFences = true
 guessSyntax = true
 lineNos = true
 lineNumbersInTable = false
-style = "dracula"
+style = "monokailight"
 
 [markup.goldmark.renderer]
 unsafe = true
@@ -69,8 +69,8 @@ weight = 100
 
 
 [params]
-author = "Puppet"
-description = "A simple and clean theme for Hugo"
+author = "zeze"
+description = "強くなるための道を模索するブログ"
 keywords = "blog,developer,personal"
 img_home = "img/home-bg.jpg"
 img_404 = "img/404-bg.jpg"
@@ -84,40 +84,32 @@ custom_css = [] # ["css/custom.css"]  Add your file to assets folder  [assets/cs
 enable = true
 gravatarEmail = ""
 # Overwritten by your gravatar image if `gravatarEmail` is filled
-avatar = "img/home-bg.jpg"
-bio = "a personal website"
+avatar = "img/IMG_2234.jpg"
+bio = "穏やかに生きたい。"
 
 [params.social]
 twitter = "johndoe"
-facebook = "johndoe"
-zhihu = "johndoe"
-weibo = "johndoe"
+#facebook = "johndoe"
+#zhihu = "johndoe"
+#weibo = "johndoe"
 github = "johndoe"
-gitlab = "johndoe"
-linkedin = "johndoe"
+#gitlab = "johndoe"
+#linkedin = "johndoe"
 rss = true
-[params.social.mastodon]
-weight = 56
-icon = "fab fa-mastodon"
-format = "https://mastodon.social/%v"
-id = "johndoe"
-url = ""
-
-[[params.friends]]
-name = "John Doe"
-url = "https://gohugo.io"
-
-[[params.friends]]
-name = "John Doe"
-url = "https://gohugo.io"
+#[params.social.mastodon]
+#weight = 56
+#icon = "fab fa-mastodon"
+#format = "https://mastodon.social/%v"
+#id = "johndoe"
+#url = ""
 
 # See https://giscus.app/
-[params.giscus]
-enable = true
-repo = "roninro/hugo-theme-puppet"
-repo_id = "R_kgDOHuvyhw"
-category = "General"
-category_id = "DIC_kwDOHuvyh84CQjDo"
-input_position = "top"
-theme = "light_tritanopia"
-lang = "en"
+#[params.giscus]
+#enable = true
+#repo = "roninro/hugo-theme-puppet"
+#repo_id = "R_kgDOHuvyhw"
+#category = "General"
+#category_id = "DIC_kwDOHuvyh84CQjDo"
+#input_position = "top"
+#theme = "light_tritanopia"
+#lang = "en"

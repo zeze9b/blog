@@ -15,8 +15,8 @@ comment = true
 その中で、Hugoのような静的サイトジェネレータの利用がWordPressのようなCMSよりもモダンであること。さらに静的サイトであればサーバー代もかからず無料で公開できる方法があるということを知りました。
 そこで本記事ではHugoを使ってNetifyに静的ブログを無料で公開する手順を説明しようと思います。
 
-## 準備
-### 前提知識
+## 2. 準備
+### 2.1 前提知識
 #### 「静的サイトジェネレータ(SSG)」 VS 「CMS」
 |              | SSG                                        | CMS                                                            |
 | ------------ | ------------------------------------------ | -------------------------------------------------------------- |
@@ -36,25 +36,25 @@ comment = true
 - GitHubなどのバージョン管理システムと連携して自動的にサイトを更新
 - 一定の無料枠がある
 
-### 環境
+### 2.2 環境
 Ubuntu 22.04 on WSL  
 hugo_extended_0.115.3_linux-amd64.deb
 
-## Hugoのインストール
+## 3. Hugoのインストール
 ```shell
 $ wget https://github.com/gohugoio/hugo/releases/download/v0.115.3/hugo_extended_0.115.3_linux-amd64.deb
 $ sudo dpkg -i hugo_extended_0.115.3_linux-amd64.deb
 ```
 
-## ブログを作成する
+## 4. ブログを作成する
 公式のチュートリアルがとても分かりやすいため、こちらに沿って行います。  
 [Hugo クイックスタート](https://gohugo.io/getting-started/quick-start/)
 
-### プロジェクトの作成
+### 4.1 プロジェクトの作成
 ```shell
 $ hugo new site quickstart
 ```
-### テーマの設定
+### 4.2 テーマの設定
 今回はPuppetというテーマがとてもシンプルで気に入ったので利用しています。
 ```shell
 $ cd quickstart
@@ -88,7 +88,7 @@ themesDir = "themes"
 
  ・・・
 ```
-### 新しいページを追加
+### 4.3 新しいページを追加
 ```shell
 $ hugo new posts/my-first-post.md
 ```
@@ -111,13 +111,13 @@ comment = true
 ここからが本文です。
 マークダウン形式で記載します。
 ```
-### 開発サーバーの起動
+### 4.4 開発サーバーの起動
 ```
 $ hugo server
 ```
 http://localhost:1313/subdir/ にアクセスすると作成したページが表示されます。
 
-### 静的サイトの作成
+### 4.5 静的サイトの作成
 ```
 $ hugo
 ```
@@ -126,12 +126,12 @@ $ hugo
 NetlifyではGitHubのレポジトリをリンクするため、作成したブログをGitHubにpushしておきましょう。
 　　
 
-## Netlifyで公開する
-### Netlifyのアカウント作成
+## 5. Netlifyで公開する
+### 5.1 Netlifyのアカウント作成
 1. https://app.netlify.com/ にアクセスします。
 2. GitHub を選択し、認証を行います。
 
-### ホスト設定
+### 5.2 ホスト設定
 1. `Add new site`をクリックし、`Import an existing project`を選択します。
 2. `Deploy with GitHub`をクリックし、インポートしたいレポジトリを選択します。
 3. `Build command`に`hugo`、`Publish directory`に`public`を入力します。
@@ -164,7 +164,7 @@ baseURL = "netlifyで割り振られたドメイン"
 ```
 再度GitHubにpushすると、無事表示されました！
 
-## 参考
+## 6. 参考
 ◆Hugoのチュートリアル
 https://gohugo.io/getting-started/quick-start/
 ◆Host on Netlify 
