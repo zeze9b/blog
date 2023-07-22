@@ -46,26 +46,26 @@ identifier = "home"
 name = "Home"
 url = "/"
 weight = -100
-[[menu.main]]
-identifier = "archive"
-name = "Archive"
-url = "/archive/"
-weight = 10
-[[menu.main]]
-identifier = "guide"
-name = "Guide"
-url = "/series/themes-guide/"
-weight = 20
-[[menu.main]]
-identifier = "about"
-name = "About"
-url = "/about/"
-weight = 50
-[[menu.main]]
-identifier = "github"
-name = "Github"
-url = "https://github.com/roninro/hugo-theme-puppet/"
-weight = 100
+# [[menu.main]]
+# identifier = "archive"
+# name = "Archive"
+# url = "/archive/"
+# weight = 10
+# [[menu.main]]
+# identifier = "guide"
+# name = "Guide"
+# url = "/series/themes-guide/"
+# weight = 20
+# [[menu.main]]
+# identifier = "about"
+# name = "About"
+# url = "/about/"
+# weight = 50
+# [[menu.main]]
+# identifier = "github"
+# name = "Github"
+# url = "https://github.com/roninro/hugo-theme-puppet/"
+# weight = 100
 
 
 [params]
@@ -88,11 +88,11 @@ gravatarEmail = "zezekara0831@gmail.com"
 bio = "穏やかに生きたい。"
 
 [params.social]
-twitter = "johndoe"
+twitter = "zeze9b"
 #facebook = "johndoe"
 #zhihu = "johndoe"
 #weibo = "johndoe"
-github = "johndoe"
+github = "zeze9b"
 #gitlab = "johndoe"
 #linkedin = "johndoe"
 rss = true
