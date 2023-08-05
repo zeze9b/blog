@@ -1,6 +1,6 @@
 +++
-title = "Pythonでnetcatを作る"
-date = "2023-7-31"
+title = "Pythonでnetcatを実装する#1"
+date = "2023-8-5"
 description = "コマンドラインからデータを送受信できるnetcatをpythonを使って実装します。"
 draft = false
 header_img = ""
